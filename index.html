@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <title>Corona Updates</title>
+        <style>
+            body {
+                font-family: sans-serif;
+                margin: 0;
+                letter-spacing: 0.1em;
+            }
+            header {
+                background-color: rgba(0, 128, 128, 0.9);
+                color: #fff;
+                padding: 1em 2em;
+                display: flex;
+            }
+            img {
+                width: 100px;
+            }
+            .titles {
+                margin-left: 1em;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .titles h1,
+            .titles h2 {
+                margin: 0;
+                font-weight: normal;
+            }
+            .titles h1 {
+                font-size: 1.8rem;
+            }
+            .titles h2 {
+                font-size: 2.6rem;
+            }
+            h3,
+            h4 {
+                font-weight: normal;
+                margin: 0;
+                text-align: center;
+            }
+            h3 {
+                font-size: 1.5rem;
+                margin-bottom: 0.5em;
+            }
+            h4 {
+                font-size: 2.5rem;
+            }
+            .wrapper {
+                width: 90%;
+                max-width: 1200px;
+                margin: 2.5rem auto 1rem;
+                /* display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(579px, 1fr));
+                grid-column-gap: 2.625rem;
+                grid-row-gap: 2.625rem; */
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            .wrapper > div {
+                width: 30%;
+                box-sizing: border-box;
+                background-color: rgba(0, 128, 128, 0.8);
+                color: #fff;
+                padding: 1.5em 2em;
+                margin-bottom: 2.2em;
+                box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+            }
+            .wrapper > div:hover {
+                background-color: rgba(0, 128, 128, 0.75);
+            }
+            @media screen and (min-width: 650px) {
+                .wrapper .w-50 {
+                    width: 65%;
+                }
+            }
+            .update-date {
+                background-color: #ddd;
+                padding: 1.5em 2em;
+                color: rgba(0, 128, 128, 1);
+            }
+            @media screen and (max-width: 650px) {
+                .wrapper {
+                    flex-direction: column;
+                }
+                .wrapper > div {
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="app"></div>
+        <script src="app.js"></script>
+    </body>
+</html>
